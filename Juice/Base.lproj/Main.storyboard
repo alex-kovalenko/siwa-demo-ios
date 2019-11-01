@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14800.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0hh-Re-ahv">
-    <device id="retina4_7" orientation="portrait"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0hh-Re-ahv">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14758.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,19 +10,18 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="loginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Juice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Child" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pTO-po-da4">
                                 <rect key="frame" x="40" y="169" width="295" height="34"/>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="juice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edQ-Fi-16n">
-                                <rect key="frame" x="124.5" y="60" width="126.5" height="66"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="master" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edQ-Fi-16n">
+                                <rect key="frame" x="94" y="60" width="187" height="66"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="55"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -60,7 +59,6 @@
                             </button>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cls-MG-CX9">
                                 <rect key="frame" x="40" y="248" width="295" height="34"/>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
@@ -68,7 +66,7 @@
                                 <rect key="frame" x="40" y="352" width="295" height="80"/>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Cls-MG-CX9" firstAttribute="top" secondItem="mfI-T4-hQZ" secondAttribute="bottom" constant="2" id="3KL-HF-lkj"/>
                             <constraint firstItem="mfI-T4-hQZ" firstAttribute="top" secondItem="pTO-po-da4" secondAttribute="bottom" constant="22" id="3Tw-sV-PEx"/>
@@ -101,6 +99,7 @@
                     </view>
                     <connections>
                         <outlet property="loginProviderStackView" destination="pnN-qu-Yf0" id="tCX-I9-jil"/>
+                        <outlet property="loginTitle" destination="edQ-Fi-16n" id="V4W-Ba-SBM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -110,7 +109,7 @@
         <!--Result View Controller-->
         <scene sceneID="Hto-jf-fKt">
             <objects>
-                <viewController storyboardIdentifier="juiceViewController" id="0hh-Re-ahv" customClass="ResultViewController" customModule="Juice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="juiceViewController" id="0hh-Re-ahv" customClass="ResultViewController" customModule="Child" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5I5-Jp-mA3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -167,25 +166,34 @@
                                 <rect key="frame" x="0.0" y="199" width="375" height="40"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                 <state key="normal" title="Sign Out">
-                                    <color key="titleColor" cocoaTouchSystemColor="systemRedColor"/>
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="signOutButtonPressed" destination="0hh-Re-ahv" eventType="touchUpInside" id="ME7-Vw-KMd"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CRO-Rt-0nX">
+                                <rect key="frame" x="16" y="247" width="343" height="400"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6e2-5Z-E9X" firstAttribute="trailing" secondItem="k7G-bN-59a" secondAttribute="trailing" id="1Gp-i1-HoX"/>
                             <constraint firstItem="k7G-bN-59a" firstAttribute="leading" secondItem="pxN-En-oBs" secondAttribute="leading" id="2LG-xa-H98"/>
                             <constraint firstItem="Ea1-HT-BxI" firstAttribute="leading" secondItem="bj0-Pb-G1l" secondAttribute="leading" constant="16" id="3BX-Og-Xuy"/>
                             <constraint firstItem="pxN-En-oBs" firstAttribute="trailing" secondItem="fVS-XC-E6Y" secondAttribute="trailing" id="5Pi-Ec-zAd"/>
+                            <constraint firstItem="bj0-Pb-G1l" firstAttribute="trailing" secondItem="CRO-Rt-0nX" secondAttribute="trailing" constant="16" id="606-M7-R78"/>
                             <constraint firstItem="HVb-Yf-PGl" firstAttribute="top" secondItem="Ea1-HT-BxI" secondAttribute="bottom" constant="7.5" id="6sf-TB-Lly"/>
                             <constraint firstItem="k7G-bN-59a" firstAttribute="top" secondItem="pxN-En-oBs" secondAttribute="bottom" constant="7.5" id="8I4-4a-Gm7"/>
                             <constraint firstItem="HVb-Yf-PGl" firstAttribute="leading" secondItem="Ea1-HT-BxI" secondAttribute="leading" id="9Av-gf-zVB"/>
                             <constraint firstItem="fVS-XC-E6Y" firstAttribute="leading" secondItem="HVb-Yf-PGl" secondAttribute="leading" id="9yx-eZ-wyo"/>
                             <constraint firstItem="fVS-XC-E6Y" firstAttribute="top" secondItem="HVb-Yf-PGl" secondAttribute="bottom" constant="7.5" id="Beh-f5-SpP"/>
                             <constraint firstItem="s6k-cF-EIV" firstAttribute="leading" secondItem="6e2-5Z-E9X" secondAttribute="leading" id="FnG-iN-Oqj"/>
+                            <constraint firstItem="bj0-Pb-G1l" firstAttribute="bottom" secondItem="CRO-Rt-0nX" secondAttribute="bottom" constant="20" id="Fpl-uB-7ba"/>
                             <constraint firstItem="bj0-Pb-G1l" firstAttribute="trailing" secondItem="Ea1-HT-BxI" secondAttribute="trailing" constant="16" id="Klr-an-9O7"/>
                             <constraint firstItem="yE6-Zp-ODH" firstAttribute="leading" secondItem="s6k-cF-EIV" secondAttribute="leading" id="LXX-nr-rWN"/>
                             <constraint firstItem="pxN-En-oBs" firstAttribute="leading" secondItem="fVS-XC-E6Y" secondAttribute="leading" id="Lo0-pj-aif"/>
@@ -199,6 +207,8 @@
                             <constraint firstItem="6e2-5Z-E9X" firstAttribute="leading" secondItem="k7G-bN-59a" secondAttribute="leading" id="aMH-Eo-a1F"/>
                             <constraint firstItem="k7G-bN-59a" firstAttribute="trailing" secondItem="pxN-En-oBs" secondAttribute="trailing" id="bd8-7C-OzV"/>
                             <constraint firstItem="VUF-Dv-gfB" firstAttribute="leading" secondItem="bj0-Pb-G1l" secondAttribute="leading" id="dQe-xs-OuD"/>
+                            <constraint firstItem="CRO-Rt-0nX" firstAttribute="top" secondItem="VUF-Dv-gfB" secondAttribute="bottom" constant="8" id="fgk-mQ-nyB"/>
+                            <constraint firstItem="CRO-Rt-0nX" firstAttribute="leading" secondItem="bj0-Pb-G1l" secondAttribute="leading" constant="16" id="iki-mh-dZX"/>
                             <constraint firstItem="VUF-Dv-gfB" firstAttribute="top" secondItem="yE6-Zp-ODH" secondAttribute="bottom" constant="20" id="kPw-YG-Anb"/>
                             <constraint firstItem="HVb-Yf-PGl" firstAttribute="trailing" secondItem="Ea1-HT-BxI" secondAttribute="trailing" id="rUZ-0f-6qy"/>
                             <constraint firstItem="pxN-En-oBs" firstAttribute="top" secondItem="fVS-XC-E6Y" secondAttribute="bottom" constant="7.5" id="tbv-vj-Ief"/>
@@ -210,13 +220,14 @@
                         <outlet property="emailLabel" destination="yE6-Zp-ODH" id="FqJ-5d-pj6"/>
                         <outlet property="familyNameLabel" destination="6e2-5Z-E9X" id="jBn-rl-dvN"/>
                         <outlet property="givenNameLabel" destination="pxN-En-oBs" id="cU9-0x-BcV"/>
+                        <outlet property="resultTextView" destination="CRO-Rt-0nX" id="bVS-vB-sJy"/>
                         <outlet property="signOutButton" destination="VUF-Dv-gfB" id="aAM-C8-Qaj"/>
                         <outlet property="userIdentifierLabel" destination="HVb-Yf-PGl" id="5jV-eY-ZNM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4av-sQ-gnB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="897" y="114"/>
+            <point key="canvasLocation" x="896.79999999999995" y="113.79310344827587"/>
         </scene>
     </scenes>
 </document>

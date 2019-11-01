@@ -9,11 +9,22 @@ import UIKit
 import AuthenticationServices
 
 class LoginViewController: UIViewController {
-    
+    private let childname = "child"
+    private var isChild: Bool {
+        return (Bundle.main.infoDictionary!["CFBundleName"] as! String).lowercased() == childname
+    }
+
+    private var keychainGroup: String {
+        return isChild ? "com.sampleapp.child-one.siwa" : "com.sampleapp.master.siwa"
+    }
+
+
+    @IBOutlet weak var loginTitle: UILabel!
     @IBOutlet weak var loginProviderStackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginTitle.text = Bundle.main.infoDictionary!["CFBundleName"] as? String
         setupProviderLoginView()
     }
     
@@ -61,11 +72,18 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
             let userIdentifier = appleIDCredential.user
             let fullName = appleIDCredential.fullName
             let email = appleIDCredential.email
-            
+
+            var response: String = "No Response"
+
             // Create an account in your system.
+            if let authorizationCode = appleIDCredential.authorizationCode {
+                response = Link.create(with: authorizationCode, andBundleID: Bundle.main.bundleIdentifier!)
+                print(response)
+            }
+
             // For the purpose of this demo app, store the userIdentifier in the keychain.
             do {
-                try KeychainItem(service: "com.example.apple-samplecode.juice", account: "userIdentifier").saveItem(userIdentifier)
+                try KeychainItem(service: keychainGroup, account: "userIdentifier").saveItem(userIdentifier)
             } catch {
                 print("Unable to save userIdentifier to keychain.")
             }
@@ -83,6 +101,9 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
                     if let email = email {
                         viewController.emailLabel.text = email
                     }
+
+                    viewController.resultTextView.text = response
+
                     self.dismiss(animated: true, completion: nil)
                 }
             }

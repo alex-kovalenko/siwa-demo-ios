@@ -15,7 +15,8 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var familyNameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var signOutButton: UIButton!
-    
+    @IBOutlet weak var resultTextView: UITextView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         userIdentifierLabel.text = KeychainItem.currentUserIdentifier

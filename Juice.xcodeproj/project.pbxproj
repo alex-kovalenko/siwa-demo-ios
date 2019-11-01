@@ -15,6 +15,16 @@
 		169AA600227C0E4F00BAB850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169AA5FF227C0E4F00BAB850 /* Assets.xcassets */; };
 		169AA603227C0E4F00BAB850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169AA601227C0E4F00BAB850 /* LaunchScreen.storyboard */; };
 		169FA477227C3D79006A0051 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FA476227C3D79006A0051 /* ResultViewController.swift */; };
+		CB3F8B142368C5E4000D8204 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169AA5F8227C0E4E00BAB850 /* AppDelegate.swift */; };
+		CB3F8B152368C5E4000D8204 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169AA5FA227C0E4E00BAB850 /* LoginViewController.swift */; };
+		CB3F8B162368C5E7000D8204 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FA476227C3D79006A0051 /* ResultViewController.swift */; };
+		CB3F8B172368C5EA000D8204 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169AA5FC227C0E4E00BAB850 /* Main.storyboard */; };
+		CB4AFBC92368C9550062AF4F /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160DE029227C29AC00DD88A7 /* AuthenticationServices.framework */; };
+		CB4AFBCA2368C9860062AF4F /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165E0943228BB03F00A42BB9 /* KeychainItem.swift */; };
+		CB4AFBCB2368C98E0062AF4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169AA601227C0E4F00BAB850 /* LaunchScreen.storyboard */; };
+		CB4AFBCC2368C9910062AF4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169AA5FF227C0E4F00BAB850 /* Assets.xcassets */; };
+		CB78FAD9236BA42B00945180 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB78FAD8236BA42B00945180 /* Link.swift */; };
+		CB78FADA236BA4B900945180 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB78FAD8236BA42B00945180 /* Link.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +32,7 @@
 		160DE029227C29AC00DD88A7 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		160DE02B227C31E500DD88A7 /* Juice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Juice.entitlements; sourceTree = "<group>"; };
 		165E0943228BB03F00A42BB9 /* KeychainItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
-		169AA5F5227C0E4E00BAB850 /* Juice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Juice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		169AA5F5227C0E4E00BAB850 /* Master App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Master App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		169AA5F8227C0E4E00BAB850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		169AA5FA227C0E4E00BAB850 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		169AA5FD227C0E4E00BAB850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,8 +40,12 @@
 		169AA602227C0E4F00BAB850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		169AA604227C0E4F00BAB850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		169FA476227C3D79006A0051 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		72E6810072E6822000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
-		72E835B072E8523000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		72E6810072E6822000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		72E835B072E8523000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		CB3F8B002368C5B1000D8204 /* Child.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Child.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3F8B102368C5B3000D8204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB4AFBC82368C8E90062AF4F /* Child.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Child.entitlements; sourceTree = "<group>"; };
+		CB78FAD8236BA42B00945180 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +54,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				160DE02A227C29AC00DD88A7 /* AuthenticationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3F8AFD2368C5B1000D8204 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4AFBC92368C9550062AF4F /* AuthenticationServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +92,7 @@
 			children = (
 				137212B01371F77000000001 /* README.md */,
 				169AA5F7227C0E4E00BAB850 /* Juice */,
+				CB3F8B012368C5B1000D8204 /* Child */,
 				169AA5F6227C0E4E00BAB850 /* Products */,
 				160DE028227C29AB00DD88A7 /* Frameworks */,
 				72E6842072E67BB000000001 /* Configuration */,
@@ -80,7 +103,8 @@
 		169AA5F6227C0E4E00BAB850 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				169AA5F5227C0E4E00BAB850 /* Juice.app */,
+				169AA5F5227C0E4E00BAB850 /* Master App.app */,
+				CB3F8B002368C5B1000D8204 /* Child.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +112,7 @@
 		169AA5F7227C0E4E00BAB850 /* Juice */ = {
 			isa = PBXGroup;
 			children = (
+				CB78FAD7236BA40B00945180 /* Core */,
 				160DE02B227C31E500DD88A7 /* Juice.entitlements */,
 				169AA5F8227C0E4E00BAB850 /* AppDelegate.swift */,
 				169AA5FA227C0E4E00BAB850 /* LoginViewController.swift */,
@@ -111,29 +136,61 @@
 			children = (
 				72E835B072E8523000000001 /* LICENSE.txt */,
 			);
-			name = LICENSE;
 			path = LICENSE;
+			sourceTree = "<group>";
+		};
+		CB3F8B012368C5B1000D8204 /* Child */ = {
+			isa = PBXGroup;
+			children = (
+				CB4AFBC82368C8E90062AF4F /* Child.entitlements */,
+				CB3F8B102368C5B3000D8204 /* Info.plist */,
+			);
+			path = Child;
+			sourceTree = "<group>";
+		};
+		CB78FAD7236BA40B00945180 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CB78FAD8236BA42B00945180 /* Link.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		169AA5F4227C0E4E00BAB850 /* Juice */ = {
+		169AA5F4227C0E4E00BAB850 /* Master */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 169AA607227C0E4F00BAB850 /* Build configuration list for PBXNativeTarget "Juice" */;
+			buildConfigurationList = 169AA607227C0E4F00BAB850 /* Build configuration list for PBXNativeTarget "Master" */;
 			buildPhases = (
 				169AA5F1227C0E4E00BAB850 /* Sources */,
 				169AA5F2227C0E4E00BAB850 /* Frameworks */,
 				169AA5F3227C0E4E00BAB850 /* Resources */,
-				1344E2F013435FA000000001,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Juice;
+			name = Master;
 			productName = Juice;
-			productReference = 169AA5F5227C0E4E00BAB850 /* Juice.app */;
+			productReference = 169AA5F5227C0E4E00BAB850 /* Master App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB3F8AFF2368C5B1000D8204 /* Child */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB3F8B112368C5B3000D8204 /* Build configuration list for PBXNativeTarget "Child" */;
+			buildPhases = (
+				CB3F8AFC2368C5B1000D8204 /* Sources */,
+				CB3F8AFD2368C5B1000D8204 /* Frameworks */,
+				CB3F8AFE2368C5B1000D8204 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Child;
+			productName = Child;
+			productReference = CB3F8B002368C5B1000D8204 /* Child.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -142,11 +199,15 @@
 		169AA5ED227C0E4E00BAB850 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Latest;
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
 					169AA5F4227C0E4E00BAB850 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					CB3F8AFF2368C5B1000D8204 = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
@@ -164,7 +225,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				169AA5F4227C0E4E00BAB850 /* Juice */,
+				169AA5F4227C0E4E00BAB850 /* Master */,
+				CB3F8AFF2368C5B1000D8204 /* Child */,
 			);
 		};
 /* End PBXProject section */
@@ -180,6 +242,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB3F8AFE2368C5B1000D8204 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3F8B172368C5EA000D8204 /* Main.storyboard in Resources */,
+				CB4AFBCC2368C9910062AF4F /* Assets.xcassets in Resources */,
+				CB4AFBCB2368C98E0062AF4F /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -191,6 +263,19 @@
 				169AA5FB227C0E4E00BAB850 /* LoginViewController.swift in Sources */,
 				169AA5F9227C0E4E00BAB850 /* AppDelegate.swift in Sources */,
 				165E0944228BB03F00A42BB9 /* KeychainItem.swift in Sources */,
+				CB78FAD9236BA42B00945180 /* Link.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3F8AFC2368C5B1000D8204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3F8B152368C5E4000D8204 /* LoginViewController.swift in Sources */,
+				CB3F8B142368C5E4000D8204 /* AppDelegate.swift in Sources */,
+				CB3F8B162368C5E7000D8204 /* ResultViewController.swift in Sources */,
+				CB4AFBCA2368C9860062AF4F /* KeychainItem.swift in Sources */,
+				CB78FADA236BA4B900945180 /* Link.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,17 +427,17 @@
 				CODE_SIGN_ENTITLEMENTS = Juice/Juice.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2FYPP5PESL;
 				INFOPLIST_FILE = "Juice/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.juice${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sampleapp.master.siwa;
+				PRODUCT_NAME = "Master App";
+				PROVISIONING_PROFILE_SPECIFIER = "SIWA Master Provisioning";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -368,19 +453,61 @@
 				CODE_SIGN_ENTITLEMENTS = Juice/Juice.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2FYPP5PESL;
 				INFOPLIST_FILE = "Juice/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.juice${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sampleapp.master.siwa;
+				PRODUCT_NAME = "Master App";
+				PROVISIONING_PROFILE_SPECIFIER = "SIWA Master Provisioning";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB3F8B122368C5B3000D8204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Child/Child.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2FYPP5PESL;
+				INFOPLIST_FILE = Child/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sampleapp.child-one.siwa";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "SIWA Child";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB3F8B132368C5B3000D8204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Child/Child.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2FYPP5PESL;
+				INFOPLIST_FILE = Child/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sampleapp.child-one.siwa";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "SIWA Child";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -398,11 +525,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		169AA607227C0E4F00BAB850 /* Build configuration list for PBXNativeTarget "Juice" */ = {
+		169AA607227C0E4F00BAB850 /* Build configuration list for PBXNativeTarget "Master" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				169AA608227C0E4F00BAB850 /* Debug */,
 				169AA609227C0E4F00BAB850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB3F8B112368C5B3000D8204 /* Build configuration list for PBXNativeTarget "Child" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3F8B122368C5B3000D8204 /* Debug */,
+				CB3F8B132368C5B3000D8204 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
